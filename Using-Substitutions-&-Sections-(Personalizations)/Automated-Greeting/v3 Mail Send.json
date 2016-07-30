@@ -1,0 +1,76 @@
+{
+  "personalizations": [
+    {
+      "to": [
+        {
+          "email": "example01@domain.com",
+          "name": "Example 01"
+        }
+      ],
+      "subject": "Example 01",
+      "substitutions": {
+        "-first_name-":"Example",
+        "-last_name-":"01",
+        "Welcome ,":"-1-",
+        " ,":",",
+        "-warm_welcome-":"-greeting-"
+      }
+    },
+    {
+      "to": [
+        {
+          "email": "example02@domain.com",
+          "name": "Example 02"
+        }
+      ],
+      "subject": "Example 02",
+      "substitutions": {
+        "-first_name-":"Example",
+        "-last_name-":"",
+        "Welcome ,":"-1-",
+        " ,":",",
+        "-warm_welcome-":"-greeting-"
+      }
+    },
+    {
+      "to": [
+        {
+          "email": "example03@domain.com",
+          "name": "Example 03"
+        }
+      ],
+      "subject": "Example 03",
+      "substitutions": {
+        "-first_name-":"",
+        "-last_name-":"",
+        "Welcome ,":"-1-",
+        " ,":",",
+        "-warm_welcome-":"-greeting-"
+      }
+    }
+  ],
+  "from": {
+    "email": "email@kylearoberts.org",
+    "name": "Kyle Roberts"
+  },
+  "reply_to": {
+    "email": "email@kylearoberts.org",
+    "name": "Kyle Roberts"
+  },
+  "subject": "will get replaced",
+  "content": [
+    {
+      "type": "text/plain",
+      "value": "email body content"
+    },
+    {
+      "type": "text/html",
+      "value": "email body content"
+    }
+  ],
+  "sections": {
+    "-greeting-": "Welcome -first_name- -last_name-,",
+    "-1-": "Welcome,"
+  },
+  "template_id": "template-1",
+}

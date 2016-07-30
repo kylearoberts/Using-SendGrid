@@ -1,0 +1,23 @@
+{"to": [
+    "example01@domain.com",
+    "example02@domain.com",
+    "example03@domain.com"
+  ],
+"sub": {
+"-first_name-": [ "Example", "Example", ""],
+"-last_name-": [ "01", "", "" ],
+"Welcome ,": ["-1-","-1-","-1-"],
+" ,": [",",",",","],
+"-warm_welcome-": [ "-greeting-", "-greeting-", "-greeting-"]},
+"section": {
+"-greeting-": "Welcome -first_name- -last_name-,",
+"-1-": "Welcome," },
+  "filters": {
+    "templates": {
+      "settings": {
+        "enable": 1,
+        "template_id": "template-1"
+      }
+    }
+  }
+}
